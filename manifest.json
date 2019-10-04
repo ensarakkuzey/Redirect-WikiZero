@@ -1,0 +1,25 @@
+{
+    "name": "Redirect WikiZero",
+    "version": "1.0",
+    "description": "This is a extension that redirects Wikipedia links to WikiZero.",
+    "author": "Ensar Akkuzey",
+
+    "background": {
+        "scripts": ["extension.js"],
+        "persistent": true
+    },
+    
+    "permissions": ["webRequest", "*://*.wikipedia.org/*", "webRequestBlocking"],
+
+    "page_action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/wikizero16.png",
+            "32": "images/wikizero32.png",
+            "48": "images/wikizero48.png",
+            "128": "images/wikizero128.png"
+        }
+    },
+
+    "manifest_version": 2
+}
